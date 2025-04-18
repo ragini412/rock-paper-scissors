@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="./game.css">
+</head>
+<body>
+    <!-- <h1>Rock-Paper-Scissors Game</h1> -->
+     <img src="./images/banner.png" alt="Banner" id="banner">
+    <!-- <button class="btn" id="btn-1" onclick="let User_choice= `Rock`;computer_choice();result(User_choice,comp_choice);"><img src="./images/rock.png" alt=""></button> -->
+
+    <div>
+        <img src="./images/rock.png" alt="Rock" class="btn" id="btn-1" onclick="let User_choice= `Rock`;computer_choice();result(User_choice,comp_choice);">
+        <img src="./images/paper.png" alt="Paper" class="btn" id="btn-2" onclick="User_choice= `Paper`;computer_choice();result(User_choice,comp_choice);">
+        <img src="./images/scissors.png" alt="Scissors" class="btn" id="btn-3" onclick="User_choice= `Scissors`;computer_choice();result(User_choice,comp_choice);">
+    </div>
+
+    <!-- <button class="btn" id="btn-2" onclick="User_choice= `Paper`;computer_choice();result(User_choice,comp_choice);"><img src="./images/paper.png" alt=""></button>
+    <button class="btn" id="btn-3" onclick="User_choice= `Scissors`;computer_choice();result(User_choice,comp_choice);"><img src="./images/scissors.png" alt=""></button> -->
+    <h3 id="user-move"></h3>
+    <h3 id="comp-move"></h3>
+    <h3 id="result"></h3>
+    <h3 id="score"></h3>
+    <button class="btn" id="btn-4" onclick="reset_score();clear_storage();">Reset</button>
+
+    <script src="./game.js"></script>
+</body>
+</html>
