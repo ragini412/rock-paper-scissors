@@ -4,11 +4,11 @@ body{
 
 .btn{
     cursor: pointer;
-    width: 70px;
+    width: 10%;
 }
 
 #banner{
-    width: 100%;
+    width: 80%;
 }
 
 div{
@@ -18,5 +18,8 @@ div{
 @media screen and (max-width: 450px) {
     .btn{
         width: 50px;
+    }
+    #banner{
+        width: 100%;
     }
 }
